@@ -4,8 +4,6 @@ title: Tools
 permalink: /tools/
 ---
 
-# Tools
-
 * scratch project
 * various examples, see productions
 * vagrant file

@@ -17,14 +17,13 @@ body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
-    font-weight: 300;
-    letter-spacing: 0.065em;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    letter-spacing: $base-letter-spacing;
 }
 
 
@@ -85,6 +84,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
+    letter-spacing: 2 * $base-letter-spacing;
 }
 
 
@@ -97,8 +97,8 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $link-color;
-        text-decoration: underline;
+        color: lighten($link-color, 10%);
+        text-decoration: none;
     }
 }
 
@@ -112,7 +112,6 @@ blockquote {
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    letter-spacing: -1px;
     font-style: italic;
 
     > :last-child {
@@ -128,9 +127,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    background-color: lighten($background-color, 10%);
+    font-weight: inherit;
+    color: $grey-color-light;
 }
 
 code {
