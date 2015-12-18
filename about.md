@@ -3,8 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-# Projectionist
-
 
 Projection is a different medium to TV and web.
 Subsets of video, CG graphics, stills available for those platforms are appropriate.
