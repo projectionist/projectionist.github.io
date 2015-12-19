@@ -15,46 +15,69 @@ body.landing {
       width: 800px;
     }
 
-    $text-color: rgba(230,240, 220, 0.7);
-    $shadow-color: 0 2px 1px rgba(255,255, 220, 0.7);
-
-    @-webkit-keyframes image_blur {
-      0%   {
-        -webkit-filter: blur(10px);
+    .projected-text {
+      @-webkit-keyframes h1_blur {
+        0%   {
+          -webkit-filter: blur(10px);
+        }
+        10% {
+          -webkit-filter: blur(5px);
+        }
+        100% {
+          -webkit-filter: blur(1px);
+        }
       }
-      10% {
-        -webkit-filter: blur(5px);
-      }
-      100% {
-        -webkit-filter: blur(1px);
-      }
-    }
 
-    h1 {
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      margin-top: 100px;
+      margin-top: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 200px black;
 
-      font-size: 60pt;
-      text-align: center;
-      -webkit-filter: blur(0px);
+      color: rgba(230,240, 220, 0.7);
+
       display: none;
+      cursor: default;
 
-      color: $text-color;
-      text-shadow: $shadow-color;
-      font-weight: 300;
-      -webkit-filter: blur(1px);
+      -webkit-user-select: none;
+      user-select: none;
 
       &.on {
-        -webkit-animation: image_blur 1s;
         display: block;
+
+        h1 {
+          -webkit-animation: h1_blur 1s;
+        }
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+
+        font-size: 60pt;
+        font-weight: 300;
+
+        text-shadow: 0 2px 1px rgba(255,255, 220, 0.7);;
+        -webkit-filter: blur(1px);
+      }
+
+      .brief {
+        font-size: 25pt;
+        letter-spacing: 0;
+        font-weight: 400;
+        text-shadow: 0 3px 2px rgba(245, 245, 200, 0.9);
+        color: rgba(255, 255, 0, 0);
+      }
+
+      .step-out {
+        background-color: #333;
+        color: black;
+        border-radius: 2px;
+        border: solid 1px #888;
+        width: 40%;
+        margin-top: 50px;
       }
     }
-
-    .intro {
-      color:
-    }
-
-
   }
 }
