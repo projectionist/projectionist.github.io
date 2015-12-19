@@ -11,4 +11,6 @@ email: projectionist@array.bz
 url: "http://projectionist.array.bz" # the base hostname & protocol for your site
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables", "fenced_code_blocks"]
