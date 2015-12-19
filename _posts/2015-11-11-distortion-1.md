@@ -2,7 +2,8 @@
 layout: post
 title:  "Distortion 1"
 date:   2015-11-11 21:10:10 +0000
-poster: https://s3.amazonaws.com/array-bz-projectionist/projectionist/productions/distortion-1/poster.png
+poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/poster.png"
+clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/clip800.mp4"
 ---
 
 # Distortion 1
