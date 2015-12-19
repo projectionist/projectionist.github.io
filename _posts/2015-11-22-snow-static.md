@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Snow-Static"
+title:  "Snow:Static"
 date:   2015-11-22 22:22:14 +0000
+poster: https://s3.amazonaws.com/array-bz-projectionist/projectionist/productions/snow-static/poster.png
 ---
 
 # Snow Static

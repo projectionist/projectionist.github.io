@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Snow-Straight"
+title:  "Snow:Straight"
 date:   2015-11-24 20:56:09 +0000
+poster: https://s3.amazonaws.com/array-bz-projectionist/projectionist/productions/snow-straight/poster.png
 ---
 
 # Snow Straight
