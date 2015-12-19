@@ -2,6 +2,8 @@
  * Site header
  */
 .site-header {
+    border-top: 5px solid $grey-color-dark;
+    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -9,35 +11,29 @@
 }
 
 .site-title {
-    font-size: 80px;
-    font-weight: 100;
+    font-size: 26px;
+    font-weight: 300;
     line-height: 56px;
+    letter-spacing: -1px;
     margin-bottom: 0;
-    text-transform: uppercase;
-    color: $text-color;
+    float: left;
 
     &,
-    &:visited,
-    &:hover,
-    &:active {
-      color: $text-color;
-      text-decoration: none;
-      text-shadow: none;
+    &:visited {
+        color: $grey-color-dark;
     }
 }
 
 .site-nav {
-    border-top: solid 5px lighten($background-color, 10%);
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1.0em;
-    padding: 5px 0 3px 0;
+    float: right;
+    line-height: 56px;
 
     .menu-icon {
         display: none;
     }
 
     .page-link {
+        color: $text-color;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -102,6 +98,7 @@
  * Site footer
  */
 .site-footer {
+    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -208,6 +205,7 @@
 
 .post-title {
     font-size: 42px;
+    letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {

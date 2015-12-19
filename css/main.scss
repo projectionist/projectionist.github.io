@@ -3,35 +3,24 @@
 ---
 @charset "utf-8";
 
-// palette
-$palette-primary:    #F0F0F0;
-$palette-background: #151515;
-$palette-control:    #6ABEDB;
-$palette-inset:      #757571;
-$palette-secondary:  #B0ABA0;
 
 
 // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-size:   14px;
-$base-font-weight: 100;
-$base-letter-spacing: 0.05em;
+$base-font-size:   16px;
+$base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       $palette-primary;
-$background-color: $palette-background;
-$link-color:       $palette-control;
-$brand-color:      $palette-primary;
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
 
-$grey-color:       $palette-secondary;
-$grey-color-light: $palette-secondary;
-$grey-color-dark:  $palette-inset;
-// $grey-color:       #828282;
-// $grey-color-light: lighten($grey-color, 40%);
-// $grey-color-dark:  darken($grey-color, 25%);
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
 $content-width:    800px;
@@ -61,6 +50,5 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "projectionist",
-        "videojs"
+        "projectionist"
 ;
