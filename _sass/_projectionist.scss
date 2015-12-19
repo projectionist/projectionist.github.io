@@ -1,31 +1,60 @@
-body.projection {
+body.landing {
   background-color: black;
 
-  .projection {
+  .overlay {
+    z-index: 1000000;
     display: block;
     position: absolute;
-    top: 30px;
+    top: 0;
     left: 0;
     width: 100%;
 
-    .overlay {
-      border: solid 1px red;
-      z-index:1000;
-    }
-
-    .video-container, .overlay {
+    .width-clamp {
       display: block;
-      width: 800px;
-      height: 600px;
       margin: 0 auto;
+      width: 800px;
     }
-  }
 
-  .heading {
-    display: block;
-    letter-spacing: $base-letter-spacing;
-    padding: $spacing-unit 0;
-    text-align: justify;
-    text-align-last: justify;
+    $text-color: rgba(230,240, 220, 0.7);
+    $shadow-color: 0 2px 1px rgba(255,255, 220, 0.7);
+
+    @-webkit-keyframes image_blur {
+      0%   {
+        -webkit-filter: blur(10px);
+      }
+      10% {
+        -webkit-filter: blur(5px);
+      }
+      100% {
+        -webkit-filter: blur(1px);
+      }
+    }
+
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 100px;
+
+      font-size: 60pt;
+      text-align: center;
+      -webkit-filter: blur(0px);
+      display: none;
+
+      color: $text-color;
+      text-shadow: $shadow-color;
+      font-weight: 300;
+      -webkit-filter: blur(1px);
+
+      &.on {
+        -webkit-animation: image_blur 1s;
+        display: block;
+      }
+    }
+
+    .intro {
+      color:
+    }
+
+
   }
 }

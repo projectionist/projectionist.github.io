@@ -19,6 +19,7 @@ projectionist.landing = {
 
     video.on("playing", function () {
       console.warn("playing");
+      projectionist.landing.illuminate();
     });
 
     this.trackWindowSize(video);
@@ -40,5 +41,8 @@ projectionist.landing = {
 
     resize();
     $(window).resize(delayedDoubleResize);
+  },
+  illuminate: function () {
+    $('h1').addClass('on');
   }
 }
