@@ -7,24 +7,22 @@ video: true
   <header class="post-header">
     <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
     <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-    <video id="projection_video"
-      preload="auto"
-      controls
-      loop
-      autoplay
-      width="800"
-      height="600"
-      poster="{{page.poster}}">
-      <source src="{{page.clip}}" type='video/mp4'>
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a web browser that
-        <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-      </p>
-    </video>
   </header>
-
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-
+  <video id="projection_video"
+    preload="auto"
+    controls
+    loop
+    autoplay
+    width="800"
+    height="600"
+    poster="{{page.poster}}">
+    <source src="{{page.clip}}" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
 </article>
