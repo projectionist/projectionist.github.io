@@ -38,6 +38,6 @@ projectionist.landing = {
     });
   },
   switchOn: function () {
-    $('.projected-text').addClass('on');
+    $('.overlay').addClass('on');
   }
 }

@@ -5,11 +5,10 @@ body.landing {
   background-size: 100% auto;
   cursor: default;
 
-  color: rgba(255,255,200,0.85);
-  text-shadow: 0 0 7px rgba(255, 255, 200, 0.6);
+  color: rgba(240,240,220,0.85);
+  text-shadow: 0 0 7px rgba(240,240,220, 0.6);
 
   @include user-select-none();
-  @include blur(1.5px);
 
   #landing_video {
     display: none;
@@ -32,7 +31,15 @@ body.landing {
   }
 
   a {
-    color: inherit;
+    color: yellow;
+    font-weight: 400;
+    text-shadow: 0 1px 1px rgba(255,255,100, 0.95);
+    @include blur(1px);
+    background-color: rgba(0,0,0,0.6);
+
+    &:hover {
+      text-shadow: 0 1px 2px yellow;
+    }
   }
 
   .overlay {
@@ -43,6 +50,8 @@ body.landing {
     left: 0;
     width: 100%;
     height: 650px;
+
+    letter-spacing: 0.05em;
 
     .width-clamp {
       position: relative;
@@ -55,7 +64,6 @@ body.landing {
     h1 {
       display: inline-block;
       position: relative;
-      line-height: 1.0em;
       top: 0px;
       left: 0;
       margin: 0;
@@ -66,27 +74,39 @@ body.landing {
       text-transform: uppercase;
       font-weight: 400;
 
-      color: rgba(255,255,200,0.65);
+      color: rgba(240,240,220,0.65);
+      @include blur(1.25px);
     }
 
     .subtext-container {
       display: inline-block;
       position: relative;
-      top: 0;
+      top: 5px;
       left: 5px;
       width: 80%;
+
+      .brief a {
+        color: inherit;
+        text-shadow: inherit;
+        background-color: inherit;
+
+        &:hover {
+          text-shadow: 0 1px 2px yellow;
+        }
+      }
 
       .brief {
         font-size: 32px;
         font-weight: 400;
+        @include blur(1.25px);
       }
 
       .attribution {
+        font-size: 16px;
         display: inline-block;
         position: relative;
         top: 160px;
         left: 0;
-        font-weight: 400;
       }
     }
   }
