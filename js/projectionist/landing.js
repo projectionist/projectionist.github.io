@@ -5,6 +5,16 @@ $(document).ready(function () {
 projectionist.landing = {
   init: function (video_element_id) {
 
+    var uaParser = new UAParser();
+
+    if (uaParser.getOS().name === "iOS") {
+      $('#landing_video').remove();
+    } else {
+      projectionist.landing.video();
+    }
+  },
+  video: function () {
+    $('#landing_video').show();
     var video = videojs('landing_video', {
       "controls": false,
       "loadingSpinner": false,
@@ -15,16 +25,14 @@ projectionist.landing = {
 
     video.ready(function () {
       video.play();
-      projectionist.landing.switchOn();
+      //projectionist.landing.switchOn();
     });
 
     video.on("playing", function () {
       console.warn("playing");
     });
-
-    this.trackWindowSize(video);
   },
-  trackWindowSize: function (video) {
+  trackBackgroundToWindowSize: function (video) {
 
     var resize = function () {
       var videoElement = $(video.el()).find('video')[0];

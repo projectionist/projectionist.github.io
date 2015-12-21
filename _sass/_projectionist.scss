@@ -1,10 +1,20 @@
 body.landing {
-  background-color: black;
+  background-image: url(https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-straight/poster600.png);
+  background-size: 100% auto;
   position: relative;
+
+  #landing_video {
+    display: none;
+  }
+
+  .landing_video-dimensions, video {
+    width: 100%;
+    height: auto;
+  }
 
   .overlay {
     z-index: 1000000;
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
