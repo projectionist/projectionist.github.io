@@ -32,6 +32,10 @@ projectionist.landing = {
     video.on("loadeddata", function () {
       projectionist.landing.switchOn();
     });
+
+    video.on('error', function () {
+      $('#landing_video').remove();
+    });
   },
   switchOn: function () {
     $('.projected-text').addClass('on');
