@@ -16,6 +16,7 @@ dl, dd, ol, ul, figure {
 body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
+    text-shadow: 0 0 1px $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
@@ -23,7 +24,19 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    text-shadow: 0 0 1px $text-color;
+
+    // begin background effect
+    @-webkit-keyframes background_keyframes {
+      0% {
+        background-color: darken($background-color, 25%);
+      }
+      100% {
+        background-color: $background-color;
+      }
+    }
+    animation: background_keyframes 500ms;
+    animation-timing-function: ease-out;
+    // end background effect
 }
 
 
@@ -97,7 +110,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: lighten($link-color, 5%);
+      color: lighten($link-color, 10%);
     }
 }
 

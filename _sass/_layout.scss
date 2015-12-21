@@ -5,18 +5,16 @@
     z-index: 10000;
     background-color: $header-bg;
     min-height: 56px;
-    // @include blur(1px);
     font-weight: 200;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 
     a {
-      color: rgba(255,255,100,0.9);
-      text-shadow: 0 0 3px rgba(255,255,100,0.9);
+      color: $header-link-color;
 
       &:hover {
-          color: rgba(255,255,100,1.0);
+          color: darken($header-link-color, 20%);
       }
     }
 }
@@ -103,6 +101,11 @@
     }
 }
 
+
+.site-footer {
+  text-align: center;
+  padding: 10px 0;
+}
 
 /**
  * Page content
