@@ -19,92 +19,32 @@ body.landing {
     top: 0;
     left: 0;
     width: 100%;
+    height: 650px;
+    color: rgba(255,255,200,0.5);
+    text-shadow: 0 0 5px rgba(255,255,200,0.85);
 
     .width-clamp {
       position: relative;
       display: block;
       margin: 0 auto;
       width: 800px;
+      height: 100%;
     }
 
-    .projected-text {
-      @-webkit-keyframes h1_blur {
-        0%   {
-          -webkit-filter: blur(10px);
-        }
-        10% {
-          -webkit-filter: blur(5px);
-        }
-        100% {
-          -webkit-filter: blur(1px);
-        }
-      }
+    h1 {
+      width: 100%;
 
-      background-color: rgba(0, 0, 0, 0.22);
-      box-shadow: 0 0 200px rgba(0,0,0,0.62);
-      padding-bottom: 100px;
-      border-radius: 50px;
+      font-size: 80px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 200;
 
-      color: rgba(230,240, 220, 0.7);
+    }
 
-      display: none;
-      cursor: default;
-
-      -webkit-user-select: none;
-      user-select: none;
-
-      &.on {
-        display: block;
-
-        h1 {
-          -webkit-animation: h1_blur 1s;
-        }
-      }
-
-      h1 {
-        display: inline-block;
-        $font-size: 60pt;
-        padding: 180px 0 0 0;
-        position: relative;
-        line-height: $font-size;
-
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-
-        font-size: $font-size;
-        font-weight: 300;
-
-        text-shadow: 0 2px 1px rgba(255,255, 220, 0.7), 0 0 4px black;
-        -webkit-filter: blur(1px);
-      }
-
-      .brief {
-        position: relative;
-      }
-
-      .brief, .site-nav .page-link {
-        font-size: 20pt;
-        letter-spacing: 0;
-        font-weight: 400;
-        text-shadow: 0 3px 2px rgba(245, 245, 200, 0.9);
-        color: rgba(0, 0, 0, 0);
-      }
-
-      .attribution {
-        padding-top: 5px;
-      }
-
-      .attribution, .attribution a {
-        font-size: 13pt;
-        font-weight: 400;
-        text-shadow: 0 3px 2px rgba(245, 245, 200, 0.9);
-        color: rgba(0, 0, 0, 0);
-      }
-
-      .site-nav .page-link {
-        font-size: 13pt;
-        text-transform: uppercase;
-      }
+    .brief {
+      font-size: 40px;
+      font-weight: 200;
+      width: 100%;
     }
   }
 }
