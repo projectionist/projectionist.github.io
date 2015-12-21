@@ -15,8 +15,9 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #f4f4f4;
-$brand-color:      #2a7ae2;
+$background-color: white;
+$header_bg:        #111;
+$brand-color:      rgb(205,205,0);
 $link-color:       $brand-color;
 
 $grey-color:       #828282;
@@ -59,8 +60,6 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting",
-        "projectionist"
-        //,
-        // "projections",
-        // "reading"
+        "projectionist",
+        "projections"
 ;
