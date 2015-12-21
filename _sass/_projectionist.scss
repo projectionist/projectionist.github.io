@@ -31,7 +31,7 @@ body.landing {
   }
 
   a {
-    color: yellow;
+    color: rgba(255,255,60, 0.95);
     font-weight: 400;
     text-shadow: 0 1px 1px rgba(255,255,100, 0.95);
     @include blur(1px);
@@ -50,27 +50,22 @@ body.landing {
     left: 0;
     width: 100%;
     height: 650px;
-
     letter-spacing: 0.05em;
-
-    .width-clamp {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      width: 800px;
-      height: 100%;
-    }
 
     h1 {
       display: inline-block;
+      border-radius: 25px;
+      background-color: rgba(0,0,0,0.3);
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
       position: relative;
-      top: 0px;
+      top: 0;
       left: 0;
       margin: 0;
-      margin-top: 100px;
+      margin-top: 120px;
       padding: 0;
 
       font-size: 80px;
+      line-height: 80px;
       text-transform: uppercase;
       font-weight: 400;
 
@@ -81,28 +76,24 @@ body.landing {
     .subtext-container {
       display: inline-block;
       position: relative;
-      top: 5px;
+      top: 15px;
       left: 5px;
       width: 80%;
 
-      .brief a {
-        color: inherit;
-        text-shadow: inherit;
-        background-color: inherit;
-
-        &:hover {
-          text-shadow: 0 1px 2px yellow;
-        }
-      }
-
       .brief {
+        display: inline-block;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.5);
+        box-shadow: 0 0 5px rgba(0,0,0,0.7);
         font-size: 32px;
+        line-height: 32px;
         font-weight: 400;
         @include blur(1.25px);
       }
 
       .attribution {
         font-size: 16px;
+        line-height: 16px;
         display: inline-block;
         position: relative;
         top: 160px;

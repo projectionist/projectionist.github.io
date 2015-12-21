@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  projectionist.landing.init();
+  //projectionist.landing.init();
 });
 
 projectionist.landing = {
