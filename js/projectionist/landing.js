@@ -29,15 +29,8 @@ projectionist.landing = {
       "preload": "auto"
     });
 
-    video.on("loadeddata", function () {
-      projectionist.landing.switchOn();
-    });
-
     video.on('error', function () {
       $('#landing_video').remove();
     });
-  },
-  switchOn: function () {
-    $('.overlay').addClass('on');
   }
 }

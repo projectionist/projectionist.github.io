@@ -1,8 +1,11 @@
 body.landing {
   position: relative;
+
+  // background settings
   background-color: black;
   background-image: url(https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-straight/poster600.png);
   background-size: 100% auto;
+
   cursor: default;
 
   color: rgba(240,240,220,0.85);
@@ -10,6 +13,22 @@ body.landing {
 
   @include user-select-none();
 
+  // begin unblur effect on page load
+
+  @keyframes blur_keyframes {
+    0%   {
+      @include blur(10px);
+    }
+    100% {
+      @include blur(0px);
+    }
+  }
+  @include blur(0px);
+  animation: blur_keyframes 1s;
+  animation-timing-function: ease-out;
+  // end unblur effect
+
+  // hide the video background for iOS
   #landing_video {
     display: none;
   }
@@ -117,7 +136,7 @@ body.landing {
         line-height: 16px;
         display: inline-block;
         position: relative;
-        top: 20px;
+        top: 15px;
         left: 0;
       }
     }
