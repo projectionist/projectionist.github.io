@@ -1,7 +1,7 @@
 body.landing {
+  position: relative;
   background-image: url(https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-straight/poster600.png);
   background-size: 100% auto;
-  position: relative;
 
   #landing_video {
     display: none;
@@ -14,7 +14,7 @@ body.landing {
 
   .overlay {
     z-index: 1000000;
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
