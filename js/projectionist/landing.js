@@ -7,7 +7,7 @@ projectionist.landing = {
 
     var uaParser = new UAParser();
 
-    if (uaParser.getOS().name === "iOS") {
+    if (uaParser.getOS().name === "iOS" || (screen.width < 450)) {
       this.initIOS();
       return;
     }

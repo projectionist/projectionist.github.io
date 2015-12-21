@@ -17,6 +17,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #f4f4f4;
 $brand-color:      #2a7ae2;
+$link-color:       $brand-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -43,7 +44,15 @@ $on-laptop:        800px;
     }
 }
 
+@mixin user-select-none() {
+  -webkit-user-select: none;
+  user-select: none;
+}
 
+@mixin blur($radius) {
+  -webkit-filter: blur($radius);
+  filter: blur($radius);
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
