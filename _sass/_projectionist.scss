@@ -142,19 +142,4 @@ body.landing {
       }
     }
   }
-
-  .site-nav {
-    @include media-query($on-palm) {
-      background-color: transparent;
-      border: none;
-
-      .menu-icon {
-        > svg {
-          path {
-            fill: rgba(255,255,100,0.85);
-          }
-        }
-      }
-    }
-  }
 }
