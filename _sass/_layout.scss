@@ -5,7 +5,6 @@
     z-index: 10000;
     background-color: $header-bg;
     min-height: 56px;
-
     font-weight: 400;
 
     // Positioning context for the mobile navigation icon
@@ -111,4 +110,15 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+}
+
+article.post {
+  max-width: 500px;
+  margin: 0 auto;
+
+
+  @include media-query($on-palm) {
+    max-width: none;
+    margin: 0;
+  }
 }

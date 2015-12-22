@@ -21,4 +21,16 @@ Projectionist sources are available for all productions: https://github.com/proj
 * how to get set up with the VM
 * how to get set up with a PI
 * Discussion around Projector choice
-*
+* how to connect with nfs
+
+
+Projectionist uses:
+
+* Debian Linux
+  * Noobs on a Raspberry PI
+  * Debian 8.1 (x86) with Wayland on a VM
+* OpenGL ES 2.0
+* OpenGL Mathematics GLM
+* FFmpeg
+* make
+* pkg-config
