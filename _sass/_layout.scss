@@ -5,19 +5,18 @@
     z-index: 10000;
     background-color: $header-bg;
     min-height: 56px;
-    font-weight: 200;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 
     a {
-      color: $header-link-color;
-      text-shadow: 0 0 2px lighten($header-link-color, 25%);
-      letter-spacing: 0.05em;
+      color: darken($branded-link-color, 20%);
+      font-weight: 200;
+      text-shadow: 0 0 2px $branded-link-color;
 
       &:hover {
-          color: lighten($header-link-color, 15%);
-          text-shadow: 0 0 3px lighten($header-link-color, 15%);
+        color: $branded-link-color;
+        text-shadow: 0 0 2px $branded-link-color;
       }
     }
 }
@@ -25,7 +24,6 @@
 .site-title {
     font-size: 30px;
     line-height: 56px;
-    letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     text-transform: uppercase;
@@ -73,7 +71,7 @@
                 height: 15px;
 
                 path {
-                    fill: $header-link-color;
+                    fill: $branded-link-color;
                 }
             }
         }

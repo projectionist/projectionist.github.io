@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  //projectionist.landing.init();
+  projectionist.landing.init();
 });
 
 projectionist.landing = {
@@ -27,10 +27,6 @@ projectionist.landing = {
       "autoplay": true,
       "loop": true,
       "preload": "auto"
-    });
-
-    video.on('ready', function () {
-      video.play();
     });
 
     video.on('error', function () {
