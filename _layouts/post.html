@@ -14,9 +14,9 @@ video: true
   </div>
   <video id="projection_video"
     preload="auto"
-    controls
-    loop
-    autoplay
+    controls="true"
+    loop="true"
+    autoplay="true"
     width="600"
     height="auto"
     poster="{{page.poster}}">
@@ -28,7 +28,8 @@ video: true
     </p>
   </video>
   <div class="post-footer reading-container">
-    <pre>repository: {{ page.repository }}
-branch: {{ page.branch }}</pre>
+    <pre>repository: <a href="{{ page.repository }}">{{ page.repository }}</a>
+branch: {{ page.branch }}
+full-size: <a href="{{ page.clip_full }}">original.mov</a></pre>
   </div>
 </article>

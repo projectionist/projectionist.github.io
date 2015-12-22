@@ -5,6 +5,7 @@ date:   2015-11-11 21:10:10 +0000
 poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/poster.png"
 clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/clip600.mp4"
 clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/clip600.webm"
+clip_full: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/distortion-1/original.mov"
 repository: https://github.com/projectionist/loop.git
 branch: production/distortion-1
 ---
