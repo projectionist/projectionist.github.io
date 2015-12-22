@@ -12,25 +12,25 @@
 
     a {
       color: $header-link-color;
+      text-shadow: 0 0 2px lighten($header-link-color, 25%);
+      letter-spacing: 0.05em;
 
       &:hover {
-          color: darken($header-link-color, 20%);
+          color: lighten($header-link-color, 15%);
+          text-shadow: 0 0 3px lighten($header-link-color, 15%);
       }
     }
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 30px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-
-    &:hover {
-      text-decoration: none;
-    }
+    letter-spacing: 0.085em;
+    font-weight: 300;
 }
 
 .site-nav {

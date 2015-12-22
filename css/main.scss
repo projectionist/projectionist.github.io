@@ -16,10 +16,13 @@ $spacing-unit:     30px;
 
 $text-color:       #111;
 $background-color: white;
-$link-color:       #50A0FF;
+$link-color:       #309cb6;
 
-$header_bg:        #111;
-$header-link-color: rgba(255,255,175,0.85);
+$brand-color:      rgba(240, 240, 220, 0.65);
+$branded-link-color: rgba(255,255,60, 0.95);
+
+$header_bg:        #222;
+$header-link-color: $branded-link-color;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

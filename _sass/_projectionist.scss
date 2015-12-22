@@ -51,14 +51,15 @@ body.landing {
   }
 
   a {
-    color: rgba(255,255,60, 0.95);
+    color: $branded-link-color;
     font-weight: 400;
-    text-shadow: 0 1px 1px rgba(255,255,100, 0.95);
-    @include blur(1px);
+    text-shadow: 0 1px 2px $branded-link-color;
     background-color: rgba(0,0,0,0.6);
+    @include blur(1px);
 
     &:hover {
-      text-shadow: 0 1px 2px yellow;
+      color: darken($branded-link-color, 20%);
+      text-shadow: 0 1px 2px $branded-link-color;
     }
   }
 
@@ -89,7 +90,7 @@ body.landing {
       text-transform: uppercase;
       font-weight: 400;
 
-      color: rgba(240,240,220,0.65);
+      color: $brand-color;
       @include blur(1.25px);
 
       @include media-query($on-palm) {

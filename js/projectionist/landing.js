@@ -29,6 +29,10 @@ projectionist.landing = {
       "preload": "auto"
     });
 
+    video.on('ready', function () {
+      video.play();
+    });
+
     video.on('error', function () {
       $('#landing_video').remove();
     });
