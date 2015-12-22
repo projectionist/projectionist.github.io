@@ -2,22 +2,23 @@
 layout: default
 video: true
 ---
-<article class="post projection-about" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="post projection-about reading-container" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h2 class="post-title" itemprop="name headline">{{ page.title }}</h2>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
   </header>
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
+  <div class="post-content reading-container" itemprop="articleBody">
+    <p>
+      {{ content }}
+    </p>
   </div>
   <video id="projection_video"
     preload="auto"
     controls
     loop
     autoplay
-    width="800"
-    height="600"
+    width="600"
+    height="auto"
     poster="{{page.poster}}">
     <source src="{{page.clip}}" type='video/mp4'>
     <source src="{{page.clip_webm}}" type='video/webm'>
@@ -26,4 +27,8 @@ video: true
       <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
+  <div class="post-footer reading-container">
+    <pre>repository: {{ page.repository }}
+branch: {{ page.branch }}</pre>
+  </div>
 </article>

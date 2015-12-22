@@ -21,7 +21,8 @@ Discovery of pleasing Projections comes by design, direction, trial and error.
 The tools are design to enable rapid feedback.
 
 The <a href="/projections">projections</a> page show some example applications of video and CG.
-
+While this page shows video renderings, the output is intended to be projected as it is generated in realtime.
+This allows for the output to be manipulated in realtime, automatically or by user controls via, for example, an iPhone application.
 
 ## Technology
 

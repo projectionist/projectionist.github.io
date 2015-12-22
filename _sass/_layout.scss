@@ -112,8 +112,8 @@
     padding: $spacing-unit 0;
 }
 
-article.page {
-  max-width: 500px;
+.reading-container {
+  max-width: $reading-width;
   margin: 0 auto;
 
 

@@ -1,12 +1,4 @@
 .projections-index  {
-  .index-heading-container {
-    max-width: 500px;
-    margin-left: 0px;
-    @include media-query($on-palm) {
-      max-width: none;
-    }
-  }
-
   ul {
     $tile-width: 200px;
     $poster-height: 0.75 * $tile-width;
@@ -42,13 +34,21 @@
 }
 
 .projection-about {
+  .post-title {
+
+  }
+
+  .post-content {
+    margin: $spacing-unit 0;
+  }
+
   .projection-poster {
     display: block;
     width: 100%;
     max-width: 600px;
   }
 
-  h2 {
-
+  .post-footer {
+    margin: $spacing-unit 0;
   }
 }

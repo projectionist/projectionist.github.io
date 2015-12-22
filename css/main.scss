@@ -19,10 +19,12 @@ $background-color: white;
 $link-color:       #37B;
 
 $brand-color:      rgba(240, 240, 220, 0.65);
-$title-color:      rgba(255,255,235, 0.95);
+$title-color:      white;
 $branded-link-color: rgba(255,255,60, 0.95);
 
-$header_bg:        #222;
+$header_bg:        #000;
+
+$reading-width: 600px;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

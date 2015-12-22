@@ -14,7 +14,6 @@ body.landing {
   @include user-select-none();
 
   // begin unblur effect on page load
-
   @keyframes blur_keyframes {
     0%   {
       @include blur(10px);
