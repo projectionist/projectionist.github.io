@@ -6,6 +6,8 @@
     background-color: $header-bg;
     min-height: 56px;
 
+    font-weight: 400;
+
     // Positioning context for the mobile navigation icon
     position: relative;
 
@@ -29,6 +31,11 @@ a.site-title {
     font-weight: 300;
 
     color: $title-color;
+
+    @include media-query($on-palm) {
+      font-size: 24px;
+      letter-spacing: 0.05em;
+    }
 }
 
 .site-nav {
