@@ -10,9 +10,16 @@
     position: relative;
 
     a {
+      @include blur(1px);
+      &:hover {
+        @include blur(0px);
+      }
+    }
+
+    nav a {
       color: darken($branded-link-color, 20%);
-      font-weight: 200;
       text-shadow: 0 0 2px $branded-link-color;
+
 
       &:hover {
         color: $branded-link-color;
@@ -21,14 +28,22 @@
     }
 }
 
-.site-title {
-    font-size: 30px;
+a.site-title {
+    font-size: 36px;
     line-height: 56px;
     margin-bottom: 0;
     float: left;
     text-transform: uppercase;
-    letter-spacing: 0.085em;
-    font-weight: 300;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+
+    color: $title-color;
+    text-shadow: 0 0 1px white;
+
+    &:hover {
+      color: $title-color;
+      @include blur(1px);
+    }
 }
 
 .site-nav {
