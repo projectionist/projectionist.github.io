@@ -1,25 +1,29 @@
 ---
-layout: page
+layout: default
 title: Projections
 permalink: /projections/
 ---
+<div class="projections-index">
+  <div class="index-heading-container">
+    <h1>Projections</h1>
+    <p>
+      Details of implementation and intent are given for each.
+      Source code is available on github.
+      See each projection for details.
+    </p>
+  </div>
 
-<p>
-  Details of implementation and intent are given for each.
-  Source code is available on github.
-  See each projection for details.
-</p>
-<ul class="post-list projections-index">
-  {% for post in site.posts %}
+  <ul class="post-list">
+    {% for post in site.posts %}
     <li>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <div class="mini-poster" style="background-image: url({{post.poster}})">
         </div>
-        <h2>
+        <div class="title">
           {{ post.title }}
-        </h2>
+        </div>
       </a>
-      <span class="post-meta">Published: {{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div>

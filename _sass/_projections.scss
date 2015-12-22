@@ -1,26 +1,42 @@
-.projections-index {
-  $tile-width: 200px;
-  $poster-height: 0.75 * $tile-width;
-
-  li {
-    display: inline-block;
-    width: $tile-width;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    background-color: $grey-color-light;
-
-    h2 {
-      margin: 0;
-      padding: 0;
-      font-size: 1em;
+.projections-index  {
+  .index-heading-container {
+    max-width: 500px;
+    margin-left: 0px;
+    @include media-query($on-palm) {
+      max-width: none;
     }
+  }
 
-    .mini-poster {
+  ul {
+    $tile-width: 200px;
+    $poster-height: 0.75 * $tile-width;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+
+    li {
+      display: inline-block;
       width: $tile-width;
-      height: $poster-height;
-      background-repeat: no-repeat;
-      background-size: $tile-width $poster-height;
+      padding: 10px;
+      margin: 10px;
+
+      .title {
+        color: $text-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 5px 0;
+
+        &:hover {
+          color: $text-color;
+        }
+      }
+
+      .mini-poster {
+        width: $tile-width;
+        height: $poster-height;
+        background-repeat: no-repeat;
+        background-size: $tile-width $poster-height;
+      }
     }
   }
 }
@@ -33,6 +49,6 @@
   }
 
   h2 {
-    
+
   }
 }
