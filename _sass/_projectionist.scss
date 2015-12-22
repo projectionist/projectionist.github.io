@@ -52,6 +52,15 @@ body.landing {
 
   .site-nav {
     background-color: transparent;
+    @include media-query($on-palm) {
+      .menu-icon {
+        > svg {
+          path {
+              fill: $branded-link-color;
+          }
+        }
+      }
+    }
   }
 
   a {
@@ -88,7 +97,6 @@ body.landing {
       margin: 0;
       margin-top: 120px;
       padding: 0;
-      letter-spacing: 0.05em;
 
       font-size: 80px;
       line-height: 80px;
