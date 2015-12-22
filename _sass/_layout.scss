@@ -5,13 +5,13 @@
     z-index: 10000;
     background-color: $header-bg;
     min-height: 56px;
-    font-weight: 400;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 
     a {
       color: $title-color;
+      font-weight: 400;
 
       &:hover {
         color: $title-color;
@@ -19,12 +19,13 @@
     }
 }
 
-.site-title {
+a.site-title {
     font-size: 30px;
     line-height: 56px;
     margin-bottom: 0;
     float: left;
     text-transform: uppercase;
+    font-weight: 300;
 
     @include media-query($on-palm) {
       font-size: 24px;
