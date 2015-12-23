@@ -25,7 +25,7 @@ body.landing {
       @include blur(1.25px);
     }
   }
-  .site-header nav a, .overlay {
+  .site-header, .overlay {
     animation: blur_keyframes 1500ms;
   }
   // end unblur effect
@@ -122,11 +122,8 @@ body.landing {
       @include blur(1.25px);
 
       @include media-query($on-palm) {
-        font-size: 30px;
-        line-height: 30px;
-        border-radius: 0;
-        box-shadow: none;
-        background-color: transparent;
+        font-size: 34px;
+        line-height: 34px;
       }
     }
 
@@ -153,11 +150,8 @@ body.landing {
 
         @include blur(1.25px);
         @include media-query($on-palm) {
-          font-size: 16px;
-          line-height: 16px;
-          border-radius: 0;
-          box-shadow: none;
-          background-color: transparent;
+          font-size: 15px;
+          line-height: 15px;
         }
       }
 
@@ -168,6 +162,11 @@ body.landing {
         position: relative;
         top: 15px;
         left: 0;
+
+        @include media-query($on-palm) {
+          font-size: 11px;
+          line-height: 11px;
+        }
       }
     }
   }
