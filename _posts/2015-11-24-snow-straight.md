@@ -13,3 +13,8 @@ branch: production/snow-straight
 Point-based snow-like effect, uniform downward speed.
 Colour effects surroundings like reflection.
 Application to a space could use a camera to adjust flake colour to environment.
+
+-exhibits visualisations of computation, stutter/gaps, OS schedules different schedles. Folding@home?
+-stability of raspberry pi environment can reduce that, 
+
+* include real life video

@@ -34,3 +34,8 @@ Projectionist uses:
 * FFmpeg
 * make
 * pkg-config
+
+
+Instructions for compiling:
+
+* weston-launch
