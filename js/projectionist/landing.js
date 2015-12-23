@@ -8,15 +8,14 @@ projectionist.landing = {
     var uaParser = new UAParser();
 
     if (uaParser.getOS().name === "iOS" || (screen.width < 450)) {
-      this.initIOS();
+      projectionist.landing.initIOS();
       return;
     }
 
     projectionist.landing.video();
   },
   initIOS: function () {
-    $('#landing_video').remove();
-    $('.overlay').show();
+    projectionist.landing.abandonVideo();
   },
   video: function () {
     $('#landing_video').show();
@@ -29,8 +28,14 @@ projectionist.landing = {
       "preload": "auto"
     });
 
-    video.on('error', function () {
-      $('#landing_video').remove();
-    });
+    video.on('canplay', projectionist.landing.loadingFinished);
+    video.on('error', projectionist.landing.abandonVideo);
+  },
+  abandonVideo: function () {
+    $('#landing_video').remove();
+    projectionist.landing.loadingFinished();
+  },
+  loadingFinished: function () {
+    $('.loading').hide();
   }
 }
