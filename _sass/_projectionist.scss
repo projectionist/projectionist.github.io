@@ -18,13 +18,16 @@ body.landing {
     0%   {
       @include blur(10px);
     }
+    50%   {
+      @include blur(8px);
+    }
     100% {
-      @include blur(0px);
+      @include blur(1.25px);
     }
   }
-  @include blur(0px);
-  animation: blur_keyframes 1s;
-  animation-timing-function: ease-out;
+  .site-header nav a, .overlay {
+    animation: blur_keyframes 4s;
+  }
   // end unblur effect
 
   // hide the video background for iOS
@@ -70,7 +73,7 @@ body.landing {
     @include blur(1px);
 
     &:hover {
-      color: darken($branded-link-color, 20%);
+      color: lighten($branded-link-color, 20%);
       text-shadow: 0 1px 2px $branded-link-color;
     }
   }
@@ -117,7 +120,7 @@ body.landing {
     .subtext-container {
       display: inline-block;
       position: relative;
-      top: 40px;
+      top: 30px;
       left: 5px;
       width: 80%;
 
