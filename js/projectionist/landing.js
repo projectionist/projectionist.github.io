@@ -5,6 +5,8 @@ $(document).ready(function () {
 projectionist.landing = {
   init: function (video_element_id) {
 
+    projectionist.landing.waitForBackgroundImage();
+
     var uaParser = new UAParser();
 
     if (uaParser.getOS().name === "iOS" || (screen.width < 450)) {
@@ -28,6 +30,8 @@ projectionist.landing = {
       "preload": "auto"
     });
 
+    // video.on('play',);
+
     video.on('canplay', projectionist.landing.loadingFinished);
     video.on('error', projectionist.landing.abandonVideo);
   },
@@ -37,5 +41,21 @@ projectionist.landing = {
   },
   loadingFinished: function () {
     $('.loading').hide();
+  },
+  waitForBackgroundImage: function () {
+    var content = $('.overlay, .site-header');
+    content.hide();
+    $('<img>').load(function(){
+        // make sure to bind the load event BEFORE setting the "src"
+        content.show();
+    }).attr('src',function(){
+        var imgUrl = $('body').css('background-image');
+        imgUrl = imgUrl.substring(4, imgUrl.length-1).trim();
+        imgUrl = imgUrl.replace(/"/g, '');
+        return imgUrl;
+    }).each(function() {
+        // fail-safe for cached images which sometimes don't trigger "load" events
+        if(this.complete) $(this).load();
+    });
   }
 }
