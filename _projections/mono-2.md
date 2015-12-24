@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: projection
 title:  "Mono-2"
-date:   2015-12-18 15:33:27 +0000
+date:   2015-11-22 22:22:14 +0000
 poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/mono-2/poster.png"
 clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/mono-2/clip600.mp4"
 clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/mono-2/clip600.webm"

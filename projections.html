@@ -12,14 +12,20 @@ permalink: /projections/
     </p>
   </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <ul>
+    {% for projection in site.collections.projections %}
+      <li>{{projection}}</li>
+    {% endfor %}
+  </ul>
+
+  <ul>
+    {% for projection in site.projections %}
     <li>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-        <div class="mini-poster" style="background-image: url({{post.poster}})">
+      <a href="{{ projection.url | prepend: site.baseurl }}">
+        <div class="mini-poster" style="background-image: url({{projection.poster}})">
         </div>
         <div class="title">
-          {{ post.title }}
+          {{ projection.title }}
         </div>
       </a>
     </li>

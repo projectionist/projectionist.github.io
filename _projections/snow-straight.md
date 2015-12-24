@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: projection
 title:  "Straight"
-date:   2015-11-24 20:56:09 +0000
+date:   2015-12-01 13:17:40 +0000
 poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/poster.png"
 clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/clip600.mp4"
 clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/clip600.webm"
