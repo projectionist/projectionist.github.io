@@ -2,12 +2,12 @@
 layout: post
 title:  "Static"
 date:   2015-11-22 22:22:14 +0000
-poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-static/poster.png"
-clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-static/clip600.mp4"
-clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow-static/clip600.webm"
-clip_full: "https://dl.dropboxusercontent.com/u/1279136/projectionist/productions/snow=static/original.mov"
+poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-static/poster.png"
+clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-static/clip600.mp4"
+clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-static/clip600.webm"
+clip_full: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow=static/original.mov"
 repository: https://github.com/projectionist/snow.git
-branch: production/snow-static
+branch: projection/snow-static
 ---
 
 Point-based static-like effect.

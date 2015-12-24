@@ -39,3 +39,7 @@ Projectionist uses:
 Instructions for compiling:
 
 * weston-launch
+
+
+
+Build the project with `make`. Use `make clean` prior to building if switching from another branch.
