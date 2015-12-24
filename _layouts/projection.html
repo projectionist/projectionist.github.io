@@ -12,21 +12,6 @@ video: true
       {{ content }}
     </p>
   </article>
-  <video id="projection_video"
-    preload="auto"
-    controls="true"
-    loop="true"
-    autoplay="true"
-    width="600"
-    height="auto"
-    poster="{{page.poster}}">
-    <source src="{{page.clip}}" type='video/mp4'>
-    <source src="{{page.clip_webm}}" type='video/webm'>
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a web browser that
-      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-  </video>
   <div class="projection-footer reading-container">
     <pre>repository: <a href="{{ page.repository }}">{{ page.repository }}</a>
 branch: {{ page.branch }}

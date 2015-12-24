@@ -2,7 +2,7 @@
 layout: projection
 title:  "Straight"
 date:   2015-12-01 13:17:40 +0000
-poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/poster.png"
+poster: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/poster600.png"
 clip: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/clip600.mp4"
 clip_webm: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/clip600.webm"
 clip_full: "https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/original.mov"
@@ -10,11 +10,20 @@ repository: https://github.com/projectionist/snow.git
 branch: projection/snow-straight
 ---
 
-Point-based snow-like effect, uniform downward speed.
-Colour effects surroundings like reflection.
-Application to a space could use a camera to adjust flake colour to environment.
+This particle projection uses particles with uniform speed in a downward direction.  
+Particles are distributed horizontally at random.
 
--exhibits visualisations of computation, stutter/gaps, OS schedules different schedles. Folding@home?
--stability of raspberry pi environment can reduce that,
+Projection introduces water-like motion to the wall.
 
-* include real life video
+<video
+  preload="auto"
+  controls="true"
+  loop="true"
+  autoplay="true"
+  width="600"
+  height="auto">
+  <source src="https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/IMG_4446-600.mp4" type='video/mp4'>
+  <source src="https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/IMG_4446-600.webm" type='video/webm'>
+</video>
+
+{% include projections/video.html %}

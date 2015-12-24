@@ -24,6 +24,8 @@ Projectionist sources are available for all productions: https://github.com/proj
 * how to connect with nfs
 
 
+* white rectangles
+
 Projectionist uses:
 
 * Debian Linux
