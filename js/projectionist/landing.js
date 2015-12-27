@@ -40,7 +40,7 @@ projectionist.landing = {
     projectionist.landing.loadingFinished();
   },
   loadingFinished: function () {
-    $('.loading').hide();
+    $('.loading').addClass('hide');
   },
   waitForBackgroundImage: function () {
     var content = $('.overlay, .site-header');
