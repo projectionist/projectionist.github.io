@@ -28,7 +28,7 @@ This allows for the output to be manipulated in realtime, automatically or by us
 
 A set of open source tools facilitate fast iteration and deployment to a Raspberry PI.
 
-A core design principle is to target commodity hardware with a productive toolset to allow rapid iteration.
-As well as increasing accessibility, modest hardware and software specifications provide a simple yet capable enough starting point. Some of the more intiguing CG work exhibits technological artefacts. Delays in rendering caused by limited CPU power or pixelation, for example, are idiosycratic. The graphics stack will also run on any Debian distribution with Open GL ES 2.0, so more capable platforms can be targeted just as easily.
+A core design principle is to target commodity hardware with a productive toolset to allow rapid iteration and discovery.
+As well as increasing accessibility, modest hardware and software specifications provide a simple yet capable enough starting point. Some of the more intiguing CG work exhibits technological artefacts. Delays in rendering caused by limited CPU power or pixelation, for example, are idiosyncratic. The graphics stack will also run on any Debian distribution with Open GL ES 2.0, so more capable platforms can be targeted just as easily.
 
 Head over to the <a href="/tools">tools</a> page to take a look.
