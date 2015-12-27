@@ -77,6 +77,7 @@ Most projectors project a grey rectangle when the screen is all black. The contr
   * [https://open.gl](https://open.gl) (a subset of the tutorial sections are applicable to GLES 2.0)
   * [http://www.opengl-tutorial.org](http://www.opengl-tutorial.org) (a subset of the tutorial sections are applicable to GLES 2.0)
   * [http://docs.gl](http://docs.gl)
+* [vagrant](http://vagrantup.com)
 * [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config/)
 * [make](https://www.gnu.org/software/make/manual/)
 * [GLM](http://glm.g-truc.net)
