@@ -30,8 +30,6 @@ projectionist.landing = {
       "preload": "auto"
     });
 
-    // video.on('play',);
-
     video.on('canplay', projectionist.landing.loadingFinished);
     video.on('error', projectionist.landing.abandonVideo);
   },
@@ -43,11 +41,17 @@ projectionist.landing = {
     $('.loading').addClass('hide');
   },
   waitForBackgroundImage: function () {
-    var content = $('.overlay, .site-header');
+    var content = $('.overlay');
     content.hide();
+
+    var timeoutId = setTimeout(function () {
+       content.show();
+    }, 3000);
+
     $('<img>').load(function(){
         // make sure to bind the load event BEFORE setting the "src"
         content.show();
+        clearTimeout(timeoutId);
     }).attr('src',function(){
         var imgUrl = $('body').css('background-image');
         imgUrl = imgUrl.substring(4, imgUrl.length-1).trim();
