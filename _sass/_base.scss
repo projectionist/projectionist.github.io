@@ -17,12 +17,8 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
+  padding: 0;
+  margin: 0;
 
   // begin background effect
   @-webkit-keyframes background_keyframes {
@@ -39,56 +35,12 @@ body {
 }
 
 
-
-/**
-* Set `margin-bottom` to maintain vertical rhythm
-*/
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
-}
-
-
-/**
-* Images
-*/
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-
-
-/**
-* Figures
-*/
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $small-font-size;
-}
-
-
-
 /**
 * Lists
 */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin: ($spacing-unit) 0 ($spacing-unit) ($spacing-unit * 2);
 }
-
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
-}
-
-
 
 /**
 * Headings
@@ -96,6 +48,7 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight + 200;
   text-transform: capitalize;
+  margin-bottom: $spacing-unit;
 }
 
 h1 {
@@ -105,7 +58,7 @@ h1 {
 
 h2 {
   font-size: 1.1em;
-  margin-top: $spacing-unit;
+  margin-top: $spacing-unit * 2;
 }
 
 h3 {
@@ -120,30 +73,12 @@ h3 {
 a {
   color: $link-color;
   text-decoration: none;
+  word-wrap: break-word;
 
   &:hover {
     color: lighten($link-color, 10%);
   }
 }
-
-
-
-/**
-* Blockquotes
-*/
-blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  font-size: 18px;
-  letter-spacing: -1px;
-  font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-
 
 
 /**
@@ -155,6 +90,13 @@ code {
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
+  word-wrap: break-word;
+
+  @include media-query($on-palm) {
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
 }
 
 code {
@@ -164,6 +106,7 @@ code {
 pre {
   padding: 8px 12px;
   overflow-x: auto;
+  word-wrap: break-word;
 
   > code {
     border: 0;
@@ -177,52 +120,14 @@ pre {
 /**
 * Wrapper
 */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+.width-clamp {
+  max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
 
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
-* Clearfix
-*/
-%clearfix {
-
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-
-
-/**
-* Icons
-*/
-.icon {
-
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $grey-color;
-    }
+  @include media-query($on-palm) {
+    max-width: none;
+    margin-right: 0;
+    margin-left: 0;
   }
 }

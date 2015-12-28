@@ -1,20 +1,20 @@
 ---
-layout: default
+layout: base
 video: true
 ---
-<article class="projection-about reading-container" itemscope itemtype="http://schema.org/BlogPosting">
+<article class="reading projection-about">
 
   <header>
-    <h1 itemprop="name headline">{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
   </header>
-  <article class="reading-container" itemprop="articleBody">
-    <p>
-      {{ content }}
-    </p>
-  </article>
-  <div class="projection-footer reading-container">
+
+  <div>
+    {{ content }}
+  </div>
+
+  <div class="projection-footer">
+    <h2>Source Code</h2>
     <pre>repository: <a href="{{ page.repository }}">{{ page.repository }}</a>
-branch: {{ page.branch }}
-full-size: <a href="{{ page.clip_full }}">original.mov</a></pre>
+branch: {{ page.branch }}</pre>
   </div>
 </article>

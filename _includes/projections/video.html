@@ -1,11 +1,15 @@
-<video
-  preload="auto"
-  controls="true"
-  loop="true"
-  autoplay="true"
-  width="600"
-  height="auto"
-  poster="{{page.poster}}">
-  <source src="{{page.clip}}" type='video/mp4'>
-  <source src="{{page.clip_webm}}" type='video/webm'>
-</video>
+<h2>sample</h2>
+<div>
+  <video
+    preload="auto"
+    controls="true"
+    loop="true"
+    autoplay="true"
+    poster="{{page.poster}}">
+    <source src="{{page.clip}}" type='video/mp4'>
+    <source src="{{page.clip_webm}}" type='video/webm'>
+  </video>
+</div>
+<div>
+  Full-size sample: <a href="{{ page.clip_full }}">original.mov</a>
+</div>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="width-clamp">
+      <header class="site-header">
+        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </header>
+      <nav>
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+      {{ content }}
+      <footer>
+        by <a href="http://array.bz">array.bz</a>
+      </footer>
+    </div>
+  </body>
+</html>

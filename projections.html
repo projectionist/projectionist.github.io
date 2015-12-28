@@ -1,34 +1,24 @@
 ---
-layout: default
+layout: spread
 title: Projections
 permalink: /projections/
 ---
-<div class="projections-index">
-  <div class="reading-container">
-    <h1>Projections</h1>
-    <p>
-      Detail of design and implementation are given for each.
-      Source code is available on github.
-    </p>
-  </div>
 
-  <ul>
-    {% for projection in site.collections.projections %}
-      <li>{{projection}}</li>
-    {% endfor %}
-  </ul>
+<p>
+  Detail of design and implementation are given for each.
+  Source code is available on github.
+</p>
 
-  <ul>
-    {% for projection in site.projections %}
-    <li>
-      <a href="{{ projection.url | prepend: site.baseurl }}">
-        <div class="mini-poster" style="background-image: url({{projection.poster}})">
-        </div>
-        <div class="title">
-          {{ projection.title }}
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+<ul class="projections">
+  {% for projection in site.projections %}
+  <li>
+    <a href="{{ projection.url | prepend: site.baseurl }}">
+      <div class="mini-poster" style="background-image: url({{projection.poster}})">
+      </div>
+      <div class="title">
+        {{ projection.title }}
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

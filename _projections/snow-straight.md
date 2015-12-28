@@ -15,13 +15,13 @@ Particles are distributed horizontally at random.
 
 Projection introduces water-like motion to the wall.
 
+<h2>Projected sample</h2>
 <video
   preload="auto"
   controls="true"
   loop="true"
   autoplay="true"
-  width="600"
-  height="auto">
+  width="600">
   <source src="https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/IMG_4446-600.mp4" type='video/mp4'>
   <source src="https://dl.dropboxusercontent.com/u/1279136/projectionist/projections/snow-straight/IMG_4446-600.webm" type='video/webm'>
 </video>
