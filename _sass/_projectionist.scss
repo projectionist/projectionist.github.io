@@ -13,12 +13,7 @@ body.landing {
   font-weight: 500;
   text-transform: uppercase;
 
-  @include blur(2px);
-
-  @include media-query($on-palm) {
-    @include blur(1px);
-    text-align: center;
-  }
+  @include blur(1px);
 
   @include user-select-none();
 
@@ -31,7 +26,7 @@ body.landing {
       @include blur(8px);
     }
     100% {
-      @include blur(2px);
+      @include blur(1px);
     }
   }
   .overlay {
@@ -55,7 +50,7 @@ body.landing {
 
   .overlay {
     z-index: 1000;
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,8 +66,6 @@ body.landing {
 
       color: $brand-color;
 
-      @include blur(1.25px);
-
       @include media-query($on-palm) {
         font-size: 34px;
         line-height: 34px;
@@ -85,11 +78,25 @@ body.landing {
       font-size: 36px;
       line-height: 36px;
       text-transform: uppercase;
-      padding-left: 5px;
+      font-weight: 500;
 
       @include media-query($on-palm) {
         font-size: 16px;
         line-height: 16px;
+      }
+    }
+
+    .attribution {
+      display: block;
+      bottom: 10px;
+      left: 0px;
+      width: 100%;
+      font-size: 22px;
+      font-weight: 500;
+
+      @include media-query($on-palm) {
+        font-size: 14px;
+        line-height: 14px;
         padding-left: 0;
       }
     }
@@ -98,7 +105,7 @@ body.landing {
       display: block;
       font-size: 25px;
       padding: 100px 5px;
-      color: yellow;
+      color: rgba(255,255,255,0.65);
 
       @include media-query($on-palm) {
         padding: 10px 5px;
@@ -107,22 +114,6 @@ body.landing {
       &.hide {
         opacity: 0;
       }
-    }
-  }
-
-  .attribution {
-    position: fixed;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    display: block;
-    font-size: 20px;
-    padding-left: 5px;
-
-    @include media-query($on-palm) {
-      font-size: 11px;
-      line-height: 11px;
-      padding-left: 0;
     }
   }
 }

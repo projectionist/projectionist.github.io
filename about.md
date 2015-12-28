@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Projectionist is a vocabulary of technology and art designed to explore projection as an artistic augmention of reality.
+
+Projectionist is a vocabulary of technology and art designed to explore projection as a new medium for artistic augmention of reality.
 
 ## Art
 
