@@ -1,11 +1,10 @@
 ---
 layout: reading
 title: About
-permalink: /about/
 ---
 
 
-Projectionist is a vocabulary of technology and art designed to explore projection as a new medium for artistic augmentation of reality.
+Projectionist uses projection as a new medium to explore a vocabulary of technology and art designed to augment reality.
 
 ## Art
 
@@ -19,11 +18,11 @@ In combination with additional sensors such as a microphone or light sensor or c
 adjusted to the projected space, as defined by the artist.
 
 Discovery of pleasing Projections comes by design, direction, trial and error.
-The tools are design to enable rapid feedback.
+The tools are designed to enable rapid feedback.
 
-The <a href="/projections">projections</a> page show some example applications of video and CG.
-While this page shows video renderings, the output is intended to be projected as it is generated in realtime.
-This allows for the output to be manipulated in realtime, automatically or by user controls via, for example, an iPhone application.
+The <a href="/projections">projections</a> page show some example applications using video and CG.
+While this page shows video renderings, the output is intended to be projected in realtime.
+This allows for the output to be adjusted to be more sympathetic to the space automatically or by the projectionist using a mobile app.
 
 ## Technology
 

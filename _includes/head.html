@@ -10,15 +10,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="/js/ua-parser.js"></script>
-  <script type="text/javascript" src="/js/projectionist.js"></script>
-
   {% if page.video %}
     <!-- videojs from CDN -->
     <link href="http://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet">
     <script type="text/javascript" src="http://vjs.zencdn.net/5.4.4/video.js"></script>
   {% endif %}
-
-  <script type="text/javascript" src="/js/projectionist/{{page.layout}}.js"></script>
 </head>

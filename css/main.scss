@@ -17,9 +17,6 @@ $text-color:       black;
 $background-color: white;
 $link-color:       #37B;
 
-$brand-color:      rgba(240, 240, 60, 0.65);
-$branded-link-color: rgba(240, 240, 60, 0.95);
-
 $reading-width: 600px;
 
 $grey-color:       #828282;
@@ -61,6 +58,5 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "projectionist",
         "projections"
 ;
