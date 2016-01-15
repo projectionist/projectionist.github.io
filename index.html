@@ -1,0 +1,22 @@
+---
+layout: spread
+---
+
+<p>
+  Detail of design and implementation are given for each.
+  Source code is available on github.
+</p>
+
+<ul class="projections">
+  {% for projection in site.projections %}
+  <li>
+    <a href="{{ projection.url | prepend: site.baseurl }}">
+      <div class="mini-poster" style="background-image: url({{projection.poster}})">
+      </div>
+      <div class="title">
+        {{ projection.title }}
+      </div>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

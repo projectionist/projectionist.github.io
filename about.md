@@ -1,6 +1,7 @@
 ---
 layout: reading
 title: About
+permalink: /about/
 ---
 
 
